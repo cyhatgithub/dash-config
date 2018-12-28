@@ -92,7 +92,7 @@ output.elasticsearch:
   index: "collector"
   template:
     name: "collector"
-    path: "collector.template.json"
+    path: "collector-fields.yml"
   max_retries: 3
   bulk_max_size: 20000
   timeout: 90

@@ -1,0 +1,71 @@
+- key: collector
+  title: collector
+  description: collector_log template
+  fields:
+    - name: "@timestamp"
+      type: date
+      required: true
+      format: date
+
+    - name: "@version"
+      type: keyword
+
+    - name: "agent"
+      type: text
+
+    - name: "client"
+      type: double
+
+    - name: "host"
+      type: keyword
+
+    - name: "hostname"
+      type: text
+
+    - name: "input_type"
+      type: text
+
+    - name: "level"
+      type: text
+
+    - name: "line"
+      type: text
+
+    - name: "message"
+      type: text
+
+    - name: "metric_value"
+      type: float
+
+    - name: "module"
+      type: text
+
+    - name: "offset"
+      type: double
+
+    - name: "orgid"
+      type: double
+
+    - name: "process"
+      type: text
+
+    - name: "request_time"
+      type: float
+
+    - name: "source"
+      type: text
+
+    - name: "sysid"
+      type: double
+
+    - name: "thread"
+      type: text
+
+    - name: "type"
+      type: text
+
+    - name: "upstream_time"
+      type: float
+
+    - name: "uri"
+      type: keyword
