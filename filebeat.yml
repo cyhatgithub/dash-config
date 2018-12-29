@@ -89,10 +89,10 @@ filebeat.prospectors:
 output.elasticsearch:
   hosts: ["119.28.27.62:31174"]
   worker: 1
-  index: "collector"
+  index: "access"
   template:
-    name: "collector"
-    path: "collector-fields.yml"
+    name: "access"
+    path: "access-fields.yml"
   max_retries: 3
   bulk_max_size: 20000
   timeout: 90
