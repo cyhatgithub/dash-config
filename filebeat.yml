@@ -29,7 +29,6 @@ filebeat.prospectors:
   close_*: true
   tail_files: true
   encoding: plain
-  close_*: True
   exclude_files: []
   # Paths that should be crawled and fetched. Glob based paths.
 #  paths:
