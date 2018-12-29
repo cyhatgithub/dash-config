@@ -100,13 +100,14 @@ filebeat.prospectors:
 #  compression: gzip
 #  max_message_bytes: 1000000
 
+setup.template.name: "access"
+setup.template.pattern: "access"
+setup.template.fields: "access-fields.yml"
+
 output.elasticsearch:
   hosts: ["119.28.27.62:31174"]
   worker: 1
   index: "access"
-  template:
-    name: "access"
-    path: "access-fields.yml"
   max_retries: 3
   bulk_max_size: 20000
   timeout: 90
